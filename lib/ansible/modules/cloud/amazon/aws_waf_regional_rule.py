@@ -41,8 +41,8 @@ options:
     conditions:
         description: >
           list of conditions used in the rule. Each condition should
-          contain I(type): which is one of [C(byte), C(geo), C(ip), C(size), C(sql) or C(xss)]
-          I(negated): whether the condition should be negated, and C(condition),
+          contain I(type) which is one of [C(byte), C(geo), C(ip), C(size), C(sql) or C(xss)]
+          I(negated) whether the condition should be negated, and C(condition),
           the name of the existing condition. M(aws_waf_regional_condition) can be used to
           create new conditions
     purge_conditions:
