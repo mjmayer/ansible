@@ -49,6 +49,7 @@ options:
         description:
           - Whether or not to remove conditions that are not passed when updating `conditions`.
             Defaults to false.
+        type: bool
 '''
 
 EXAMPLES = '''
