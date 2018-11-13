@@ -165,7 +165,6 @@ def find_and_update_rule(client, module, rule_id):
         try:
             paginator = client.get_paginator(method)
             func = paginator.paginate().build_full_result
-            #func = client(method)
         except (KeyError, botocore.exceptions.OperationNotPageableError):
             # list_geo_match_sets and list_regex_match_sets do not have a paginator
             # and throw different exceptions
