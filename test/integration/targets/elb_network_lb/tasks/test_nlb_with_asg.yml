@@ -18,6 +18,7 @@
           virtualization-type: hvm
           root-device-type: ebs
           name: "amzn-ami-hvm*"
+          owner-alias: "amazon"
       register: amis
 
     - set_fact:
