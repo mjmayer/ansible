@@ -727,7 +727,7 @@ class ELBListenerRules(object):
         modified_rule = {}
 
         # Priority
-        if current_rule['Priority'] != new_rule['Priority']:
+        if int(current_rule['Priority']) != new_rule['Priority']:
             modified_rule['Priority'] = new_rule['Priority']
 
         # Actions
